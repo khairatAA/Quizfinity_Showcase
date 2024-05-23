@@ -5,6 +5,16 @@ import styles from './styles/Global';
 const App = () => {
   return (
     <>
+      <div className={`flex justify-start items-center px-20 py-5 gap-8 w-full sm:px-8 cursor-pointer`}>
+        <img src={assets.Logo} alt="Quizfinity Logo" width={34} />
+        <h1
+          className={`
+        font-IBMPlex font-extrabold text-3xl md:text-2xl sm:text-xl
+        `
+          }>
+          Quizfinity
+        </h1>
+      </div>
       <SectionWrapper
         title="Expand Your Mind, One Question at a time."
         description="Quizfinity, the ultimate mobile app for quiz

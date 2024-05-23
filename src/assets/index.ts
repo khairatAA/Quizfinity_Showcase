@@ -6,7 +6,8 @@ import javascript from "./javascript.png";
 import react from "./react.png";
 import scene from "./scene.png";
 import mockup from "./mockup.png";
-import firebase from './firebase.png'
+import firebase from './firebase.png';
+import Logo from './Logo.svg'
 
 export default {
   homeHero,
@@ -17,5 +18,6 @@ export default {
   react,
   scene,
   mockup,
-  firebase
+  firebase,
+  Logo
 };

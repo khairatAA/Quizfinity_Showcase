@@ -16,6 +16,7 @@ const Download = () => {
         <a
           href="https://play.google.com/store/apps/details?id=com.wa2goose.quizfinity"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img src={assets.googlePlayBadge} width={200} />
         </a>

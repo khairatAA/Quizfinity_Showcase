@@ -1,19 +1,33 @@
-import { Download, Features, SectionWrapper } from './components';
-import assets from './assets';
-import styles from './styles/Global';
+import { Download, Features, SectionWrapper } from "./components";
+import assets from "./assets";
+import styles from "./styles/Global";
 
 const App = () => {
   return (
     <>
-      <div className={`flex justify-start items-center px-20 py-5 gap-8 w-full sm:px-8 cursor-pointer`}>
-        <img src={assets.Logo} alt="Quizfinity Logo" width={34} />
-        <h1
-          className={`
+      <div
+        className={`flex justify-start items-center px-20 py-5 gap-8 w-full sm:px-8`}
+      >
+        <a
+          href="https://play.google.com/store/apps/details?id=com.wa2goose.quizfinity"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={assets.Logo} alt="Quizfinity Logo" width={34} />
+        </a>
+        <a
+          href="https://play.google.com/store/apps/details?id=com.wa2goose.quizfinity"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h1
+            className={`
         font-IBMPlex font-extrabold text-3xl md:text-2xl sm:text-xl
-        `
-          }>
-          Quizfinity
-        </h1>
+        `}
+          >
+            Quizfinity
+          </h1>
+        </a>
       </div>
       <SectionWrapper
         title="Expand Your Mind, One Question at a time."
@@ -46,17 +60,20 @@ const App = () => {
       <Download />
 
       <div className="px-4 py-2 justify-center items-center bg-primary flex-col text-center banner04">
-        <p className={`${styles.pText} ${styles.whiteText}`}>Made with love by {" "}
+        <p className={`${styles.pText} ${styles.whiteText}`}>
+          Made with love by{" "}
           <a
-            href='https://www.linkedin.com/in/khairat-adesina1234/'
-            target='_blank'
-            className=" font-bold text-tertiary">
+            href="https://www.linkedin.com/in/khairat-adesina1234/"
+            target="_blank"
+            className=" font-bold text-tertiary"
+          >
             Khairat Adesina
-          </a>.
+          </a>
+          .
         </p>
       </div>
     </>
   );
-}
+};
 
 export default App;
